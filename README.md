@@ -17,7 +17,7 @@
 Prints object in console, returns promise
 
 ```javascript
-var CliDriver = require('damson-cli-driver');
+var CliDriver = require('damson-driver-cli');
 var cli = new CliDriver();
 cli.send('Hello!').then(function () {
 	//
@@ -26,7 +26,7 @@ cli.send('Hello!').then(function () {
 
 ```javascript
 var damson = require('damson-core');
-var CliDriver = require('damson-cli-driver');
+var CliDriver = require('damson-driver-cli');
 var SendMessage = require('damson-send-message');
 
 damson.registerDriver(CliDriver, 'cli');
